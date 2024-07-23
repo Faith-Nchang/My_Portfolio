@@ -1,4 +1,3 @@
-require('dotenv').config();
 
 
 // theme switcher
@@ -165,7 +164,7 @@ function sendEmail()
     Email.send({
         Host : "smtp.gmail.com",
         Username : "nchangfru24@gmail.com",
-        Password : process.env.Password,
+        Password : "Will update",
         To : 'nchangfru24@gmail.com',
         From : email.value,
         Subject : "Portfolio Contact Me",
