@@ -1,4 +1,5 @@
 
+const year = new Date().getFullYear();
 
 // theme switcher
 const themeSwitcher = document.getElementById('theme-switcher');
@@ -17,6 +18,8 @@ const slideRight = new IntersectionObserver(entries => {
     });
 });
 
+// year footer
+document.querySelector(".year").innerHTML = year;
 
 const animatedSection = document.querySelector(".about-desc");
 
