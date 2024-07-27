@@ -183,3 +183,60 @@ function sendEmail()
 }
 
 
+var TypingEffect = function(element, phrases, typingSpeed) {
+    this.phrases = phrases;
+    this.element = element;
+    this.currentIndex = 0;
+    this.typingSpeed = parseInt(typingSpeed, 10) || 2000;
+    this.currentText = '';
+    this.startTyping();
+    this.isDeleting = false;
+};
+
+// Typing effect prototype method
+TypingEffect.prototype.startTyping = function() {
+    var phraseIndex = this.currentIndex % this.phrases.length;
+    var fullPhrase = this.phrases[phraseIndex];
+
+    if (this.isDeleting) {
+        this.currentText = fullPhrase.substring(0, this.currentText.length - 1);
+    } else {
+        this.currentText = fullPhrase.substring(0, this.currentText.length + 1);
+    }
+
+    this.element.innerHTML = '<span class="wrap">'+this.currentText+'</span>';
+
+    var self = this;
+    var delay = 200 - Math.random() * 100;
+
+    if (this.isDeleting) { delay /= 2; }
+
+    if (!this.isDeleting && this.currentText === fullPhrase) {
+        delay = this.typingSpeed;
+        this.isDeleting = true;
+    } else if (this.isDeleting && this.currentText === '') {
+        this.isDeleting = false;
+        this.currentIndex++;
+        delay = 500;
+    }
+
+    setTimeout(function() {
+        self.startTyping();
+    }, delay);
+};
+
+// Initialize typing effects on window load
+window.onload = function() {
+    var typewriteElements = document.getElementsByClassName('typewrite');
+    
+    // Add a 2-second delay before starting the typing effect
+    setTimeout(function() {
+        for (var i = 0; i < typewriteElements.length; i++) {
+            var phrases = typewriteElements[i].getAttribute('data-type');
+            var typingSpeed = typewriteElements[i].getAttribute('data-period');
+            if (phrases) {
+                new TypingEffect(typewriteElements[i], JSON.parse(phrases), typingSpeed);
+            }
+        }
+    }, 2500); // 2-second delay
+};
