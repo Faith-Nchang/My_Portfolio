@@ -35,12 +35,51 @@ a {
     color: inherit;
     font-weight: bold;
 }
+.Intro {
+     /* Apply the gradient as the background */
+     background: linear-gradient(to right, #ff0000, rgb(169, 108, 118), green);
+    
+     /* Clip the background to the text */
+     -webkit-background-clip: text; 
+     background-clip: text; 
+     
+     /* Make sure the text color is transparent */
+     color: transparent;
+     
+     font-weight: bold;
+}
+/* Apply this style to all images on the website */
+img {
+    transition: transform 0.3s ease; /* Smooth transition effect */
+}
+.languages{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+}
 
+/* Increase size by 5% on hover */
+img:hover {
+    transform: scale(1.05);
+}
+.anime
+{
+    display: inline;
+}
+.bulb{
+    height: 30px;
+    width: 30x;
+}
+.home{
+    line-height: 2;
+    font-size: 2rem;
+}
 #theme-switcher {
     /* position: fixed;
     top: 10px;
     right: 10px; */
-    padding-bottom: 20px;
+    padding: 2px;
     margin-bottom: 5px;
     background-color: var(--text-color);
     color: var(--background-color);
