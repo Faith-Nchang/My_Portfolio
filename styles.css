@@ -52,6 +52,7 @@ a {
 img {
     transition: transform 0.3s ease; /* Smooth transition effect */
 }
+
 .languages{
     display: flex;
     flex-direction: column;
@@ -220,6 +221,10 @@ nav a.active {
         position: relative;
         left: -80px;
         
+    }
+    .home{
+        line-height: 1;
+        font-size: 1.5rem;
     }
 }
 
