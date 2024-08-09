@@ -209,7 +209,10 @@ nav a.active {
         margin-top: 20px;
        
     }
-
+    .proj-img{
+        width:250px;
+        height: 200px;
+    }
     .menu-toggle:checked + .menu-icon + .navbar-content {
         display: flex; /* Show content when menu is toggled */
     }
@@ -252,6 +255,7 @@ nav a.active {
     border: none;
     border-radius: 50%;
     margin-left: 10px;
+    align-items: center;
 
 }
 .about-btn
@@ -351,7 +355,10 @@ section{
     {
         background-color: grey;
     }
-
+    .proj-img{
+        width: 400px;
+        height: 300px;
+    }
 
     .about-detail{
         margin: 10px 5px 10px 0px;
@@ -488,17 +495,24 @@ section{
 
   .proj-img
   {
-    width: 500px;
+    width: 600px;
+    height: 400px;
+    margin:0px;
   }
 .project-desc
 {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 94%;
+    width: 97%;
+    height: 40%;
+   
     padding: 10px;
-    background-color: var(--background-color); /* Semi-transparent black background */
-    color: var(--shade-color); /* White text color */
+    padding-top: 90px;
+    background-color: rgba(0, 0, 0, 0.5);  /* Semi-transparent black background*/
+    color: var(--shade-color); /*White text color */
+    font-size: 25px;
+    font-weight: bold;
     opacity: 0; /* Initially hidden */
     transition: opacity 0.2s ease-in-out;
 }
@@ -513,6 +527,7 @@ section{
     padding: 10px;
     cursor: pointer;
     box-shadow: 0 0 10px 5px rgba(144, 238, 144, 0.7);
+
 }
 
 .project:hover .project-desc{
