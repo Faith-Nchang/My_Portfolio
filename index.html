@@ -26,7 +26,8 @@
         
                 
         </div>
-        <div class="my_name">Faith</div>
+        <a href="#main">  <div class="my_name">Faith</div></a>
+       
 
     </nav>
 
@@ -36,13 +37,13 @@
             <div class ="home">
 
                 <div>
-                    <img src="images/Faith_img.jpg" alt="A photo of Faith Nchang" width="300" height="300" loading="lazy" class="home-img slideInRight">
+                    <img src="images/Faith_img.jpg" alt="A photo of Faith Nchang" width="400" height="400" loading="lazy" class="home-img slideInRight">
                 </div>
                 
                 
                 <div class="slideInFromLeft ">
                     
-                    <h1>Hello! I'm <span class="Intro">Faith!</span></h1>
+                    <h1 class="head">Hello! I'm <span class="Intro">Faith.</span></h1>
                     
                     
                     <div class="slideFromBottom">
@@ -54,11 +55,7 @@
                               <span class="wrap"></span>
                             </a>
                         </h1>
-                        <!-- <h1>
-                            <a href="" class="typewrite" data-period="2000" data-type='[ "Hi, Im Si.", "I am Creative.", "I Love Design.", "I Love to Develop." ]'>
-                              <span class="wrap"></span>
-                            </a>
-                          </h1> -->
+                        
                        
                            
                         </p>
@@ -83,14 +80,15 @@
 
         <!-- About me section -->
         <section id = "About-me">
+            <h1 id="abt" style="font-size: 50px;">About Me</h1>
+
             <div class = "about">
-                
                 <div>
-                    <img src="images/faith2.jpg" alt="An image of Faith Nchang" class="about-img" width="450" height="450" loading="lazy">
+                    <img src="images/faith2.jpg" alt="An image of Faith Nchang" class="about-img" width="600" height="600" loading="lazy">
                 </div>
 
-                <div class="about-desc border">
-                    <h1 id="abt">About Me</h1>
+                <div class="about-desc ">
+                   
                     <p>
                         Hey there! I'm Faith Nchang, a tech enthusiast with a knack for turning ideas into reality. 
                         Currently diving into the world of Computer Science at Montgomery College, where I'm learning 
@@ -101,18 +99,25 @@
                         Plus, I had the awesome opportunity to lead a coding program for middle school students, which not only honed my Python skills but also made me a better teacher and organizer.
 
                     </p>
-                    <p>
-                        I'm super interested in AI, machine learning, FinTech, software and web development. I love diving into new tools and technologies. 
-                        There's always something fresh to learn, and I'm excited to keep discovering and experimenting. Finding creative solutions to complex problems is one of my favorite challenges. 
-                        It's all about figuring out how things work and making them better
-                    </p>
-                    <p>
-                        I'm a curious soul who loves tech, but I also make time for dancing, reading, working out, joining coding competitions, or just tinkering with new software. 
-                        I'm always up for learning something new and tackling new challenges. 
-                    </p>
-                    <p>
-                        I'm excited about what's next and am always open to opportunities that let me dive deeper into AI/Software development, Web development, or Machine learning engineering. Whether it's a project or a role, I'm eager to make a positive impact and keep growing in my tech journey.
-                    </p>
+                <div class="details">
+                        <div class="about-detail">
+                            I'm super interested in <span>AI, machine learning, FinTech, software and web development</span>. I love diving into new tools and technologies. 
+                            There's always something fresh to learn, and I'm excited to keep discovering and experimenting.
+                        </div>
+                        <div class="about-detail">
+                            Finding creative solutions to complex problems is one of my favorite challenges. 
+                            It's all about figuring out how things work and making them better
+                        </div>
+                        <div class="about-detail">
+                            I'm a curious soul who loves tech, but I also make time for dancing, reading, working out, joining coding competitions, or just tinkering with new software. 
+                             I'm always up for learning something new and tackling new challenges. 
+                        </div>
+                        <div class="about-detail">
+                                                    I'm excited about what's next and am always open to opportunities that let me dive deeper into AI/Software development, Web development, or Machine learning engineering. Whether it's a project or a role, I'm eager to make a positive impact and keep growing in my tech journey.
+
+                        </div>
+                    </div>
+                 
                 </div>
                 
             </div>
@@ -400,8 +405,8 @@
         </section>
 
         <!-- Portfolio -->
-        <section id = "Portfolio" class="border">
-            <h1 class="program">Projects</h1>
+        <section id = "Portfolio" class="">
+            <h1 class="program" style="font-size: 35px;">Projects</h1>
             <div class = "projects">
                 <div class = "project project-1">
                     <a href="https://github.com/Faith-Nchang/LinkQR-Catalyst"><img src="images/link.png" alt="Qr Code Generator Faith Nchang" class="proj-img"></a>
@@ -436,8 +441,8 @@
         </section>
 
          <!-- licenses -->
-         <section id = "Licenses" class="border">
-            <h1 class="program">Licenses and Certifications</h1>
+         <section id = "Licenses" >
+            <h1 class="program" style="font-size: 35px;">Licenses and Certifications</h1>
             <div class="certs">
                 <a href="images/Faith_Kragge.png" alt="Intro to machine learning certification" target="_blank"><img src="images/Faith_Kragge.png" alt="Intro to machine learning certification Faith Nchang" class="certs-img"></a>
                 <p>Introduction to Machine Learning</p>
@@ -447,7 +452,7 @@
 
         <!-- contact me section -->
         <section id="contact" class="border">
-            <h1 class="program">Contact me</h1>
+            <h1 class="program" style="font-size: 35px;">Contact me</h1>
             <form onsubmit="sendEmail(); reset(); return false;">
                 <label for="name">Name:</label>
                 <input type="text" required id="name" name="Name" >

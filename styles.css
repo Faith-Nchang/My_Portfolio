@@ -89,7 +89,7 @@ img:hover {
 
 }
 nav {
-    background-color: rgb(28, 152, 28);
+    background-color: rgb(60, 179, 113);
     /* padding: 20px; */
     display: flex;
     flex-direction: row;
@@ -112,14 +112,18 @@ nav {
 .nav{
     position: relative;
     display: inline-block;
-    color:yellow;
+    color:#FFFFE0;
     text-decoration: none; /* Remove default underline */
     margin: 0 60px; /* Adjust spacing between nav items */
+    font-size: 20px;
 }
 
 nav a.active {
     text-decoration: underline;
-    color: white;
+    color: #FFD700;
+}
+.head{
+    font-size: 80px;
 }
 
 .nav::after {
@@ -230,16 +234,16 @@ nav a.active {
 
 #main
 {
-    margin: 30px;
-    padding: 100px;
+    margin-top: 30px;
+    padding: 80px; 
     padding-top:140px;
-}
+} 
 .home
 {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
@@ -296,7 +300,27 @@ button:hover{
 }
 
 
+.about-detail
+{
+    background-color: var(--text-color);
+    color: var(--background-color);
+    padding: 20px;
+    margin: 5px 20px;
+    width: 35%;
+    border-radius: 40px;
+    line-height: 20px;
+}
+.about-detail:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
 
+.details{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 .about-img
 {
     border-radius: 10px;
@@ -305,7 +329,7 @@ button:hover{
 }
 
 section{
-    margin: 100px;
+    margin:60px;
     margin-top:200px;
 }
 .about
@@ -328,6 +352,10 @@ section{
         background-color: grey;
     }
 
+
+    .about-detail{
+        margin: 10px 5px 10px 0px;
+    }
     
 
     ul
@@ -460,7 +488,7 @@ section{
 
   .proj-img
   {
-    width: 300px;
+    width: 500px;
   }
 .project-desc
 {

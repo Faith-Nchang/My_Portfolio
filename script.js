@@ -104,8 +104,8 @@ slideFromBottom.observe(p2);
 const p3 = document.querySelector(".project-3");
 slideRight.observe(p3);
 
-const home = document.querySelector(".home-btn");
-slideFromBottom.observe(home);
+// const home = document.querySelector(".home-btn");
+// slideFromBottom.observe(home);
 
 document.addEventListener('DOMContentLoaded', () => {
     const sections = document.querySelectorAll('section');
